@@ -1,10 +1,9 @@
-import Fetch from "./components/Fetch";
+import FriendsList from "./components/FriendsList";
 
 const App = () => {
   return (
     <div className="app">
-      <h1>My Recently Played Games</h1>
-      <Fetch />
+      <FriendsList />
     </div>
   );
 };

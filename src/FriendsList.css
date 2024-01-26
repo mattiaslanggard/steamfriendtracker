@@ -1,0 +1,17 @@
+/* FriendsList.css */
+
+.friends-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friend-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.friend-item:last-child {
+  margin-bottom: 0;
+}
