@@ -103,6 +103,7 @@ const FriendsList = () => {
         <Table>
           <TableHead>
             <TableRow>
+              <TableCell>#</TableCell>
               <TableCell>Avatar</TableCell>
               <TableCell>Friend Name</TableCell>
               <TableCell>Total Playtime</TableCell>
@@ -113,8 +114,9 @@ const FriendsList = () => {
           <TableBody>
             {friends
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((friend) => (
+              .map((friend, index) => (
                 <TableRow key={friend.id} className="TableRow">
+                  <TableCell>{page * rowsPerPage + index + 1}</TableCell>
                   <TableCell>
                     <Avatar src={friend.avatar} />
                   </TableCell>
