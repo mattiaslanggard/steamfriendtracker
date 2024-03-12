@@ -31,3 +31,4 @@ code.code-workspace
 *.sw?
 
 .test
+.test2
